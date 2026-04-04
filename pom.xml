@@ -45,11 +45,9 @@
         <connection>
             scm:git:git@github.com:shamim1979/neo-shikha.git
         </connection>
-
         <developerConnection>
             scm:git:ssh://github.com:shamim1979/neo-shikha.git
         </developerConnection>
-
         <url>
             https://github.com:shamim1979/neo-shikha.git
         </url>
@@ -57,10 +55,29 @@
 
     <properties>
         <java.version>17</java.version>
+        <spring-cloud.version>2025.1.1</spring-cloud.version>
+        <lombok.version>1.18.44</lombok.version>
     </properties>
 
-    <dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
