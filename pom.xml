@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <packaging>pom</packaging>
+
+    <modules>
+
+    </modules>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>4.0.5</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>com.neoshikha</groupId>
+    <artifactId>ai</artifactId>
+    <version>1.0.0</version>
+
+    <name>com.neoshikha</name>
+    <description>com.neoshikha</description>
+    <url>https://github.com:shamim1979/neo-shikha.git</url>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>shamim1979</id>
+            <name>Md Shah Alam Shamim</name>
+            <email>shamim.cse.ewu@gmail.com</email>
+            <organization>NeoShikha</organization>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>
+            scm:git:git@github.com:shamim1979/neo-shikha.git
+        </connection>
+
+        <developerConnection>
+            scm:git:ssh://github.com:shamim1979/neo-shikha.git
+        </developerConnection>
+
+        <url>
+            https://github.com:shamim1979/neo-shikha.git
+        </url>
+    </scm>
+
+    <properties>
+        <java.version>17</java.version>
+    </properties>
+
+    <dependencies>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
