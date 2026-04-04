@@ -59,6 +59,20 @@
         <lombok.version>1.18.44</lombok.version>
     </properties>
 
+    <profiles>
+        <profile>
+            <id>develop</id>
+            <properties>
+                <configServer>http://localhost:8888/</configServer>
+                <activatedProperties>develop</activatedProperties>
+                <CONFIG_SERVICE_PASSWORD>password</CONFIG_SERVICE_PASSWORD>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -79,14 +93,5 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
