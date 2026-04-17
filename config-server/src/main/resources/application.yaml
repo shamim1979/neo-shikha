@@ -1,3 +1,23 @@
+logging:
+  level:
+    org.springframework: INFO
+
 spring:
-  application:
-    name: config-server
+  cloud:
+    config:
+      fail-fast: false
+      server:
+        native:
+          search-locations: classpath:/shared/${NEOSHIKHA_DEPLOY_MODE}
+  profiles:
+    active: native
+  security:
+    user:
+      password: ${CONFIG_SERVICE_PASSWORD}
+
+server:
+  port: 8888
+  forward-headers-strategy: framework
+
+security:
+  sha_keys: 7935c837b71b4079bd0f01d458d3f994342e6ccb706af4171cd74db3941be035,9fdc0fb16fa781192a9c17ec54e3227eb99736a13a7ebcdfd5db8faa8de446aef808afec972391a56f486ca63f9f3a897b440a834dca5bcf88d21be69aae723b,d148b5f33d1ce94e52974c8a343f91b10d12c5c125dc6143d6246fd7795cbc13
