@@ -1,6 +1,6 @@
 spring:
   application:
-    name: eureka
+    name: registry
   profiles:
     default: ${ACTIVATED_PROPERTIES}
   cloud:

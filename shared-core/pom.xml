@@ -9,10 +9,10 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>shared-service-core</artifactId>
+    <artifactId>shared-core</artifactId>
 
-    <name>shared-service-core</name>
-    <description>common service config and core library</description>
+    <name>shared-core</name>
+    <description>shared common service config and core library</description>
 
     <dependencies>
         <dependency>

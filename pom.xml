@@ -7,9 +7,9 @@
 
     <modules>
         <module>config-server</module>
-        <module>eureka-server</module>
+        <module>registry-server</module>
         <module>gateway-server</module>
-        <module>shared-service-core</module>
+        <module>shared-core</module>
     </modules>
 
     <parent>
