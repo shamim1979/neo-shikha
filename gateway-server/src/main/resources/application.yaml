@@ -1,6 +1,10 @@
+server:
+  port: 8080
+  forward-headers-strategy: framework
+
 spring:
   application:
-    name: gateway
+    name: gateway-service
   profiles:
     default: ${ACTIVATED_PROPERTIES}
   cloud:
@@ -10,4 +14,13 @@ spring:
       username: user
   config:
     import: optional:configserver:${CONFIG_SERVER_URL}
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: gateway-service
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 

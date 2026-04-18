@@ -9,7 +9,7 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>registry</artifactId>
+    <artifactId>registry-server</artifactId>
 
     <name>registry</name>
     <description>eureka registry server</description>
