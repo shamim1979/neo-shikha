@@ -1,3 +1,12 @@
 spring:
   application:
     name: user-service
+  profiles:
+    default: ${ACTIVATED_PROPERTIES}
+  cloud:
+    config:
+      fail-fast: true
+      password: ${CONFIG_SERVICE_PASSWORD}
+      username: user
+  config:
+    import: optional:configserver:${CONFIG_SERVER_URL}

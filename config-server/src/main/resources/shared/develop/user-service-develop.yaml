@@ -1,0 +1,29 @@
+server:
+  port: 9001
+  forward-headers-strategy: framework
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/neo_shikha
+    username: neo
+    password: shikha
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      poolName: NeoShikhaHikariPool
+      minimumIdle: 5
+      maximumPoolSize: 20
+      idleTimeout: 600000
+      maxLifetime: 1800000
+      connectionTimeout: 30000
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  cloud:
+    config:
+      fail-fast: true

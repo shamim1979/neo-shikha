@@ -10,6 +10,7 @@
         <module>registry-server</module>
         <module>gateway-server</module>
         <module>shared-core</module>
+        <module>user-service</module>
     </modules>
 
     <parent>
