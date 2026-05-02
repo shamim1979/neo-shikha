@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres-db
+    restart: always
+    environment:
+      POSTGRES_USER: neo
+      POSTGRES_PASSWORD: shikha
+      POSTGRES_DB: neo_shikha
+    ports:
+      - "5432:5432"
+    volumes:
+      - neo_shikha_db:/var/lib/postgresql/data
+
+volumes:
+  neo_shikha_db:
+    driver: local
+    name: "neo_shikha_db"
+    driver_opts:
+      type: none
+      o: bind
+      device: ${PWD}/../.db/neo_shikha_db

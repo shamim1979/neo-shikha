@@ -1,8 +1,45 @@
+############################
+# 1. Build / Target
+############################
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+build/
+out/
+*.class
+*.jar
+*.war
+*.ear
+
+############################
+# 2. Logs
+############################
+logs/
+*.log
+
+############################
+# 3. Spring Boot
+############################
+*.pid
+*.seed
+*.pid.lock
+
+############################
+# 4. Environment / Secrets
+############################
+.env
+.env.*
+!.env.example
+
+application-local.yml
+application-dev.yml
+application-prod.yml
+
+############################
+# 5. IDE / Editor
+############################
 
 ### STS ###
 .apt_generated
@@ -14,6 +51,7 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
+.idea/
 .idea
 *.iws
 *.iml
@@ -25,9 +63,84 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
+
+# Eclipse
+.settings/
+
+############################
+# 6. OS Files
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# 7. Maven / Gradle
+############################
+
+# Gradle
+.gradle/
+
+############################
+# 8. Docker
+############################
+docker-compose.override.yml
+
+############################
+# 9. Test / Coverage
+############################
+coverage/
+*.exec
+
+############################
+# 10. Temp Files
+############################
+tmp/
+temp/
+*.tmp
+
+############################
+# 11. Hidden files (careful)
+############################
+.*
+!.gitignore
+!.mvn/
+!.mvn/wrapper/
+
+############################
+# 12. Microservice-specific
+############################
+
+# Service-specific config
+config/*.yml
+config/*.properties
+
+# Generated files
+generated/
+
+############################
+# 13. Database
+############################
+*.db
+*.sqlite
+*.h2.db
+
+############################
+# 14. Kubernetes
+############################
+*.kubeconfig
+
+############################
+# 14. codex
+############################
+*.codex
+
+############################
+# 15. Node (if frontend included)
+############################
+node_modules/
+dist/
