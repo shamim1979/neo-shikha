@@ -8,7 +8,7 @@ import lombok.experimental.SuperBuilder;
 
 import java.io.Serial;
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.UUID;
 
 @MappedSuperclass
@@ -32,9 +32,9 @@ public abstract class BaseEntity implements Serializable {
     private boolean deleted = Boolean.FALSE;
 
     @Column(updatable = false)
-    private LocalDateTime createdAt;
+    private Instant createdAt;
 
-    private LocalDateTime updatedAt;
+    private Instant updatedAt;
 
     @Column(updatable = false)
     private UUID createdBy;

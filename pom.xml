@@ -9,6 +9,7 @@
         <module>config-server</module>
         <module>registry-server</module>
         <module>gateway-server</module>
+        <module>authorization-server</module>
         <module>shared-core</module>
         <module>user-service</module>
     </modules>

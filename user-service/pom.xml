@@ -64,8 +64,8 @@
                             <goal>compile</goal>
                         </goals>
                         <configuration>
-                            <source>17</source>
-                            <target>17</target>
+                            <source>${java.version}</source>
+                            <target>${java.version}</target>
                             <encoding>UTF-8</encoding>
                             <annotationProcessors>
                                 <annotationProcessor>lombok.launch.AnnotationProcessorHider$AnnotationProcessor</annotationProcessor>
