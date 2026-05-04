@@ -1,6 +1,5 @@
 package com.neoshikha.authorizationserver.entity;
 
-import com.neoshikha.sharedcore.entity.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
